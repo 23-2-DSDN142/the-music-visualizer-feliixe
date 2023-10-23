@@ -1,14 +1,15 @@
 let firstRun = true
 let character;
 let t = 0 //animation parameter
-let blueColour;
-let greenColour;
+let lightColour;
+let darkColour;
 let sizeOfBlock = 600;
 
 
 //vocal, drum, bass, and other are volumes ranging from 0 to 100
 function draw_one_frame(words, vocal, drum, bass, other, counter) {
   //background
+  
   lightColor = color(179, 196, 252);// pastel blue
   darkColor = color(78, 102, 181);// purple
   noFill();
@@ -25,8 +26,6 @@ function draw_one_frame(words, vocal, drum, bass, other, counter) {
   
 //aura
   push()
-
-  
 
   let transparencyValues = [14, 11, 10, 5, 6, 4.7, 3, 2]; // Corresponding transparency values
   let auraX = 700
