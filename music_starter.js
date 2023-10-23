@@ -88,7 +88,7 @@ function draw_one_frame(words, vocal, drum, bass, other, counter) {
 
   //layer 1(behind)
   noStroke();
-  fill(70, 141, 171); //turquose
+  fill(70, 141, 171); 
   for (let x = 0; x <= width; x += 20) {
     let y = map(noise(t + x * 0.01), 0, 1.5, 150, height); // Adjust the minimum y-value for the terrain
     vertex(x, y);
@@ -101,7 +101,7 @@ function draw_one_frame(words, vocal, drum, bass, other, counter) {
 
   //layer 2
   noStroke();
-  fill(40, 102, 100); // Mountain color
+  fill(40, 102, 100); 
   beginShape();
   for (let x = 0; x <= width; x += 20) {
     let y = map(noise(t + x * 0.07), 0, 1, 200, height); // Adjust the minimum y-value for the terrain
@@ -114,7 +114,7 @@ function draw_one_frame(words, vocal, drum, bass, other, counter) {
 
   //layer 3
   noStroke();
-  fill(40, 87, 122); // Mountain color
+  fill(40, 87, 122); 
   beginShape();
   for (let x = 0; x <= width; x += 20) {
     let y = map(noise(t + x * 0.007), 0, 1, 300, height); // Adjust the minimum y-value for the terrain
@@ -127,7 +127,7 @@ function draw_one_frame(words, vocal, drum, bass, other, counter) {
 
   //layer 4
   noStroke();
-  fill(11, 55, 56); // Mountain color
+  fill(11, 55, 56); 
   beginShape();
   for (let x = 0; x <= width; x += 20) {
     let y = map(noise(t + x * 0.05), 0, 1, 500, height); // Adjust the minimum y-value for the terrain
@@ -143,8 +143,8 @@ function draw_one_frame(words, vocal, drum, bass, other, counter) {
   
 // character hair
   push()
-  purpleColor = color(175, 126, 214);//pastel purple
-  yellowColor = color(15, 36, 102);
+  fill = color(175, 126, 214);
+  fill = color(15, 36, 102);
 
 
   for (let i = -100; i < sizeOfBlock; i++) {
@@ -174,10 +174,6 @@ function draw_one_frame(words, vocal, drum, bass, other, counter) {
   image (character, 400, 200)
   pop()
 
-//land
-   //fill(179, 181, 242)
-   //rect(0, width/2, 1280, 700)
-  
 
   // draw cloud
   push()
